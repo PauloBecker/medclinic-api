@@ -6,6 +6,12 @@ import * as bcrypt from 'bcrypt';
 
 @Injectable()
 export class UsersService {
+  private users: User[] = []; // exemplo em memória
+
+  async findById(id: number): Promise<User | null> {
+    return await this.usersRepo.findOne({ where: { id } });
+  }
+
   constructor(
     @InjectRepository(User)
     private usersRepo: Repository<User>,
