@@ -20,7 +20,7 @@ export class UsersService {
   async create(createUserDto: CreateUserDto): Promise<User> {
     const user = this.usersRepo.create({
       ...createUserDto,
-      role: 'attendant',
+      role: createUserDto.role ?? 'attendant',
     });
     return await this.usersRepo.save(user);
   }

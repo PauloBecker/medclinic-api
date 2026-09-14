@@ -19,8 +19,8 @@ export class User {
   @Column()
   password!: string;
 
-  @Column({ default: 'attendant' })
-  role!: string; // 'admin' | 'attendant'
+  @Column({ enum: ['attendant', 'admin'] })
+  role!: string;
 
   @CreateDateColumn()
   createdAt!: Date;

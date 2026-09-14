@@ -1,5 +1,7 @@
 import { ConfigService } from '@nestjs/config';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
+import { User } from '../users/user.entity';
+import { ConfigService } from '@nestjs/config';
 
 export const typeOrmConfig = (
   configService: ConfigService,
@@ -12,5 +14,6 @@ export const typeOrmConfig = (
   database: configService.getOrThrow<string>('DB_NAME'),
   autoLoadEntities: true,
   synchronize: true,
+  entities: [User],
   logging: true,
 });
