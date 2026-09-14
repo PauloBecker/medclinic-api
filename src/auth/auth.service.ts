@@ -45,14 +45,12 @@ export class AuthService {
   async register(createUserDto: CreateUserDto) {
     try {
       const hashedPassword = await bcrypt.hash(createUserDto.password, 10);
-
       const user = await this.usersService.create({
         ...createUserDto,
         password: hashedPassword,
+        role: createUserDto.role ?? 'attendant',
       });
-
       const payload = { sub: user.id, email: user.email, roles: [user.role] };
-
       return {
         access_token: this.jwtService.sign(payload),
       };
