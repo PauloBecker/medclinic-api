@@ -1,3 +1,4 @@
+import { ConfigService } from '@nestjs/config';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { User } from '../users/user.entity';
 import { ConfigService } from '@nestjs/config';
@@ -14,4 +15,5 @@ export const typeOrmConfig = (
   autoLoadEntities: true,
   synchronize: true,
   entities: [User],
+  logging: true,
 });
