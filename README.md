@@ -61,3 +61,49 @@ Usuários
 GET /users/me → Retorna dados do usuário autenticado
 
 GET /users/admin/ping → Endpoint restrito a usuários com papel admin
+
+## 🧪 Testes
+
+Para rodar os testes:
+
+```bash
+npm run test
+```
+## 👨‍💻 Contribuição
+
+1. Crie uma branch para sua feature:
+
+```bash
+git checkout -b feat/minha-feature
+```
+2. Commit suas alterações:
+
+```bash
+git commit -m "feat: adiciona minha feature"
+```
+3. Faça push:
+```bash
+git push origin feat/minha-feature
+```
+4. Abra um Pull Request.
+
+## 👥 Autores
+- Paulo Becker — Desenvolvedor principal
+- Equipe SCTEC Módulo 2
+
+## 📬 Contato
+Se tiver dúvidas ou sugestões, entre em contato:
+- Email: [beckerpaulo81@gmail.com]
+- LinkedIn: [[ LinkedIn ](https://www.linkedin.com/in/paulo-becker-89550177/)]
+- GitHub: [[ GitHub ](https://github.com/PauloBecker)]
+
+## 🔮 Próximos Passos
+- Implementar testes automatizados (unitários e e2e).
+- Criar documentação com Swagger para facilitar o consumo da API.
+- Adicionar endpoints de gestão de pacientes e atendimentos.
+- Melhorar segurança: permitir apenas admins criarem novos usuários com papel `admin`.
+
+## 📄⚖️ Licença
+
+Este projeto está sob a licença MIT — veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
