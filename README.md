@@ -94,8 +94,8 @@ git push origin feat/minha-feature
 ## 📬 Contato
 Se tiver dúvidas ou sugestões, entre em contato:
 - Email: [beckerpaulo81@gmail.com]
-- LinkedIn: [[Seu LinkedIn aqui](https://www.linkedin.com/in/paulo-becker-89550177/)]
-- GitHub: [[Seu GitHub aqui](https://github.com/PauloBecker)]
+- LinkedIn: [[ LinkedIn ](https://www.linkedin.com/in/paulo-becker-89550177/)]
+- GitHub: [[ GitHub ](https://github.com/PauloBecker)]
 
 ## 🔮 Próximos Passos
 - Implementar testes automatizados (unitários e e2e).
@@ -103,7 +103,7 @@ Se tiver dúvidas ou sugestões, entre em contato:
 - Adicionar endpoints de gestão de pacientes e atendimentos.
 - Melhorar segurança: permitir apenas admins criarem novos usuários com papel `admin`.
 
-## 📄 Licença
+## 📄⚖️ Licença
 
 Este projeto está sob a licença MIT — veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
